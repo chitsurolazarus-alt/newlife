@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>New Life Eagles Ministries International | Raising Visionaries</title>
+  <meta name="description" content="Making disciples and raising visionaries in every nation. Join us in Zimbabwe & South Africa.">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+
+<!-- LOADING SCREEN -->
+<div class="loading-screen" id="loadingScreen">
+  <div class="loader">
+    <div class="loader-ring"></div>
+    <div class="eagle-loader">🦅</div>
+  </div>
+  <div class="loading-text">NEW LIFE EAGLES</div>
+  <div class="loading-sub">Making disciples, raising visionaries...</div>
+</div>
+
+<div class="progress-bar" id="progressBar"></div>
+<canvas id="particle-canvas"></canvas>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+  <div class="floating-element" style="top: 10%; left: 5%; animation: float1 8s ease-in-out infinite;">✨</div>
+  <div class="floating-element" style="top: 80%; right: 8%; animation: float2 10s ease-in-out infinite;">🕊️</div>
+  <div class="floating-element" style="top: 40%; right: 15%; animation: float1 12s ease-in-out infinite;">⭐</div>
+  <div class="container hero-content">
+    <img src="images/logo.png" alt="New Life Eagles Logo" class="hero-logo" onerror="this.src='https://placehold.co/140x140/0B2FA5/FFD700?text=NLE'">
+    <h1 class="hero-title">Making Disciples and<br>Raising Visionaries in Every Nation</h1>
+    <p class="hero-subtitle">Established 2014 • Soaring on Eagles' Wings</p>
+    <div class="hero-buttons">
+      <button class="btn-primary" id="joinUsBtn">✝️ Join Us</button>
+      <button class="btn-outline" id="learnMoreBtn">📖 Learn More</button>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-wheel"></div>
+    </div>
+  </div>
+</section>
+
+<main>
+  <!-- Scripture Section -->
+  <section class="scripture-section alt-bg">
+    <div class="container">
+      <div class="reveal scripture-card">
+        <div style="font-size: 3rem; animation: pulse 2s infinite;">🦅📖</div>
+        <h2 class="scripture-label">KEY SCRIPTURE</h2>
+        <p class="scripture-ref">ISAIAH 40:31</p>
+        <p class="scripture-text">"But those who hope in the Lord will renew their strength. They will soar on wings like eagles; they will run and not grow weary, they will walk and not be faint."</p>
+        <div style="margin-top: 20px; font-size: 2rem;">✨🦅✨</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Church -->
+  <section style="padding: 100px 0;">
+    <div class="container">
+      <div class="reveal" style="text-align: center; max-width: 900px; margin: 0 auto;">
+        <h2 class="section-title" style="display: inline-block;">About The Church</h2>
+        <p style="margin-top: 30px; font-size: 1.2rem; line-height: 1.8;">NEW LIFE EAGLES MINISTRIES INTERNATIONAL is a Christ-centred ministry committed to raising disciples, transforming communities and empowering believers to walk in the fullness of God's purpose for their lives. Through worship, discipleship, evangelism and missions, we seek to impact every nation with the Gospel of Jesus Christ.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Founders Section -->
+  <section class="alt-bg" style="padding: 80px 0;">
+    <div class="container">
+      <div class="founders-grid">
+        <div class="reveal-left founders-image">
+          <img src="images/founders.jpg" alt="Founders" onerror="this.src='https://placehold.co/600x400/0B2FA5/white?text=Founders'">
+        </div>
+        <div class="reveal-right founders-content">
+          <h2 class="section-title">Visionary Founders</h2>
+          <p>Led by the Spirit of God, our founders answered the call to raise disciples and plant churches across nations. Their obedience and servant leadership have birthed a movement that transforms lives through love and the Word.</p>
+          <p class="founders-quote">"We believe every believer is an eagle — destined to soar high in purpose."</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision & Mission -->
+  <section style="padding: 90px 0;">
+    <div class="container">
+      <div class="vm-grid">
+        <div class="reveal-left vision-card">
+          <h3>✨ Vision</h3>
+          <p>Making disciples and raising visionaries in every nation.</p>
+        </div>
+        <div class="reveal-right mission-card">
+          <h3>🚀 Mission</h3>
+          <p>To plant churches in every community, equipping ordinary people with practical skills to live the life of Christ and reach out serving those around them.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Values -->
+  <section class="alt-bg" style="padding: 90px 0;">
+    <div class="container">
+      <h2 class="reveal section-title text-center">Core Values</h2>
+      <div class="values-grid">
+        <div class="reveal value-card"><h3>📖 The Word of God</h3><p>We believe the Bible is the final authority for faith, doctrine and daily living.</p></div>
+        <div class="reveal value-card"><h3>🔥 Holiness</h3><p>We pursue a life that reflects the character and purity of Christ.</p></div>
+        <div class="reveal value-card"><h3>❤️ Love</h3><p>We demonstrate God's unconditional love through service and compassion.</p></div>
+        <div class="reveal value-card"><h3>⚖️ Integrity</h3><p>We remain honest, transparent and faithful in all we do.</p></div>
+        <div class="reveal value-card"><h3>🤝 Accountability</h3><p>We value responsibility and spiritual growth through mutual support.</p></div>
+        <div class="reveal value-card"><h3>👑 Servant Leadership</h3><p>We lead by serving others just as Christ served humanity.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pillars -->
+  <section style="padding: 90px 0;">
+    <div class="container">
+      <h2 class="reveal section-title text-center">Our Pillars</h2>
+      <div class="pillars-grid">
+        <div class="reveal pillar-card"><h3>🎶 Worship</h3><p>Honouring God through praise, prayer and devotion.</p></div>
+        <div class="reveal pillar-card"><h3>🤲 Ministry</h3><p>Serving people through practical and spiritual support.</p></div>
+        <div class="reveal pillar-card"><h3>🌍 Evangelism</h3><p>Sharing the Gospel and reaching the lost.</p></div>
+        <div class="reveal pillar-card"><h3>👥 Fellowship</h3><p>Building strong Christ-centred relationships.</p></div>
+        <div class="reveal pillar-card"><h3>📚 Discipleship</h3><p>Developing mature followers of Jesus Christ.</p></div>
+        <div class="reveal pillar-card"><h3>🌏 Missions</h3><p>Taking the Gospel beyond borders and transforming nations.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ministries -->
+  <section class="alt-bg" style="padding: 80px 0;">
+    <div class="container">
+      <h2 class="reveal section-title text-center">Our Ministries</h2>
+      <div class="ministries-grid">
+        <div class="ministry-card">🎤 Worship Ministry</div>
+        <div class="ministry-card">🧑‍🤝‍🧑 Youth Ministry</div>
+        <div class="ministry-card">🏡 Family Ministry</div>
+        <div class="ministry-card">📢 Evangelism Ministry</div>
+        <div class="ministry-card">🌍 Missions Ministry</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Youth Gallery -->
+  <section style="padding: 80px 0;">
+    <div class="container">
+      <h2 class="reveal section-title text-center">🏕️ Youth Adventures</h2>
+      <div id="youthGallery" class="gallery-grid"></div>
+    </div>
+  </section>
+
+  <!-- Ministry Gallery -->
+  <section class="alt-bg" style="padding: 80px 0;">
+    <div class="container">
+      <h2 class="reveal section-title text-center">🤝 Ministry Outreach</h2>
+      <div id="ministryGallery" class="gallery-grid"></div>
+    </div>
+  </section>
+
+  <!-- Couples Gallery -->
+  <section style="padding: 80px 0;">
+    <div class="container">
+      <h2 class="reveal section-title text-center">💍 Couples Fellowship</h2>
+      <div id="couplesGallery" class="gallery-grid"></div>
+    </div>
+  </section>
+
+  <!-- Branches -->
+  <section class="alt-bg" style="padding: 90px 0;">
+    <div class="container">
+      <h2 class="reveal section-title text-center">🌍 Our Branches</h2>
+      <div class="branches-grid">
+        <div class="reveal branch-card"><span class="branch-flag">🇿🇼</span><h3>Zimbabwe</h3><p>Masvingo Rural Church Planting</p></div>
+        <div class="reveal branch-card"><span class="branch-flag">🇿🇦</span><h3>South Africa</h3><p>Plot 49 Dalmada, Polokwane</p></div>
+      </div>
+      <p class="established-text">Established 2014 | Expanding Kingdom impact</p>
+    </div>
+  </section>
+
+  <!-- Salvation -->
+  <section class="salvation-section">
+    <div class="reveal salvation-content">
+      <h2>Begin Your Journey With Christ</h2>
+      <p>You were made to soar. Let today be your new beginning.</p>
+      <button id="salvationBtn" class="btn-salvation">🙏 I Want To Know Jesus</button>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <h3>NEW LIFE EAGLES MINISTRIES INTERNATIONAL</h3>
+        <p>Est. 2014 · Making disciples, raising visionaries.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#">Vision</a></li>
+          <li><a href="#">Mission</a></li>
+          <li><a href="#">Ministries</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">📘 🐦 📸</div>
+        <p>© 2025 | Soaring on Eagles' Wings</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div id="lightbox" class="lightbox">
+  <span class="close-lightbox">&times;</span>
+  <img id="lightbox-img" src="">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
